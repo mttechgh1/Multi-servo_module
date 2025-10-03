@@ -5,9 +5,15 @@ from adafruit_servokit import ServoKit
 from time import sleep
 kit=ServoKit(channels=16)
 servo=14 # toal channels used
-#input command for angles
-while true:
-  a=input("enter - ")
-  kit.servo[12].angle=int(a)
+# # new code
+# import time
+kit.servo[0].angle=180
+kit.continuous_servo[1].throttle=1
+time.sleep(1)
+kit.continuous_servo[1].throttle=-1
+time.sleep(1)
+kit.servo[0].angle=0
+kit.continuous_servo[1].throttle=0
   
+
   
