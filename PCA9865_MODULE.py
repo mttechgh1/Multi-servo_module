@@ -8,7 +8,7 @@
 from adafruit_servokit import ServoKit
 from time import sleep
 kit=ServoKit(channels=16)
-servo=14 # toal channels used
+servo=14 # total channels used
 # # new code
 # import time
 kit.servo[0].angle=180
