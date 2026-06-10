@@ -7,7 +7,7 @@
 ## ** 2nd servo moves +1, then -1 position **
 from adafruit_servokit import ServoKit
 from time import sleep
-kit=ServoKit(channels=16) #toal channels used
+kit=ServoKit(channels=16) #total channels used
 #input command for angles
 kit.servo[0].angle=0
 print("SERVO 0 = 0")
