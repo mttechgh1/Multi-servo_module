@@ -1,6 +1,10 @@
 # install PCA9865 driver - sudo pip3 install adafruit-circuitpython-servokit
 # refrences  -"techspassion", "FREEDOM TECH" - on Youtube
 #In config, "I2C" needs to be set ON
+## *** FUNCTION SUMMARY ***
+##   ** 14 channels active **
+##   ** 1st servo starts at 180 degrees, and moves to 0 degrees ****
+##   ** 2nd servo starts at 1 degree, and moves to -1 degrees, then moves to 0 degrees **
 from adafruit_servokit import ServoKit
 from time import sleep
 kit=ServoKit(channels=16)
